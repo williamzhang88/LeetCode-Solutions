@@ -5,7 +5,7 @@ class Solution {
         {
             return false;
         }
-        else if (n ==3 || n ==1)
+        else if (n == 3 || n == 1 || n == 9)
         {
             return true;
         }
@@ -17,15 +17,11 @@ class Solution {
     }
     public int helper(int x)
     {
-        if (x < 9)
-        {
-            return 1;
-        }
-        if (x / 3 ==3 && x%3 == 0)
+        if (x / 3 == 3 && x % 3 == 0)
         {
             return 3;
         }
-        else if (x%3 == 0)
+        else if (x % 3 == 0)
         {
             return helper(x/3);
         }
