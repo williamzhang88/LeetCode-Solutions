@@ -17,8 +17,7 @@
             }
             else
             {
-                String s = Integer.toString(i);
-                b.add(s);
+                b.add(Integer.toString(i));
             }
         }
         return b;
