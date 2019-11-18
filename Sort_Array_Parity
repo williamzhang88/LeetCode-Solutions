@@ -1,0 +1,20 @@
+public int[] sortArrayByParity(int[] A) 
+    {
+        ArrayList<Integer> bob = new ArrayList();
+        for (int i = 0 ; i < A.length; i++)
+        {
+            if (A[i] % 2 == 0)
+            {
+                bob.add(0, A[i]);
+            }
+            else
+            {
+                bob.add(A[i]);
+            }
+        }
+        for (int i = 0 ; i < A.length; i++)
+        {
+            A[i] = bob.get(i);
+        }
+        return A;
+    }
