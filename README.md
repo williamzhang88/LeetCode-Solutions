@@ -1,3 +1,3 @@
 # LeetCode-Solutions
-This contains selected solutions to leetcode problems produced by yours truly.
-Avaliable for public usage and reference
+This repository contains selected solutions to leetcode problems. 
+Avaliable for public usage and reference.
