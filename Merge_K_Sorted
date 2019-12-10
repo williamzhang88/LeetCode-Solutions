@@ -1,0 +1,28 @@
+public ListNode mergeKLists(ListNode[] lists)
+    {
+        PriorityQueue<Integer> pQueue = new PriorityQueue<>(); 
+        
+        for (int i = 0; i < lists.length; i++)
+        {
+            ListNode cur = lists[i];
+            while ( cur != null)
+            {
+                pQueue.add(cur.val);
+                cur = cur.next;
+            }
+        }
+        
+        ListNode temp = new ListNode(4);
+        ListNode ret = temp;
+        int i = pQueue.size();
+        int counter = 0;
+        while (counter < i)
+        {
+            ListNode l = new ListNode(pQueue.poll());
+            temp.next =  l;
+            temp = l;
+            counter++;
+        }
+        
+        return ret.next;
+    }
